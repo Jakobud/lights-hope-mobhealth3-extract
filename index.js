@@ -19,13 +19,14 @@ let names = []
 let i
 let health
 
+// Extract NPC name, levels and health values from the Elysium database
 knex
   .select('c.entry', 'c.name', 'c.minlevel', 'c.maxlevel', 'c.minhealth', 'c.maxhealth')
   .from('creature_template AS c')
   .then(mobs => {
 
     for (let mob of mobs) {
-      // Find average mob hitpoints
+      // Find average npc hitpoints
       if (mob.minhealth !== mob.maxhealth) {
         health = Math.round((mob.maxhealth + mob.minhealth) / 2)
       } else {
