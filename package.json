@@ -1,0 +1,16 @@
+{
+  "name": "elysium-mobhealth3-extract",
+  "version": "0.1.0",
+  "description": "Extracts NPC health values from the Elysium (Mangos) database and generates a pre-populated database for the MobHealth3 addon for Vanilla Wow 1.12",
+  "main": "index.js",
+  "dependencies": {
+    "knex": "^0.12.9",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Wilson <jake.e.wilson@gmail.com>",
+  "license": "MIT"
+}
